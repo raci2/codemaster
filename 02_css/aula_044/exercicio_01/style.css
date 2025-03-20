@@ -1,0 +1,43 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+h1, h2, h3{text-align: center;}
+
+.pai{
+  display: flex;
+  margin: 50px 0px;
+  gap: 50px;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.filho{
+  display: flex;
+  background-image: radial-gradient(circle at top left,red,orange, yellow);
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.filho-1{
+  background-image: radial-gradient(circle at top left,black, purple, cyan );
+  color: white;
+}
+#pai-1 .filho:nth-child(2){
+  position: static;
+}
+
+#pai-2 .filho:nth-child(2){
+  position: relative;
+  top: 30px;
+  right: 150px;
+}
+
+#pai-3 .filho:nth-child(2){
+  position: relative;
+  top: 30px;
+  right: 150px;
+  z-index: -1;
+}
+

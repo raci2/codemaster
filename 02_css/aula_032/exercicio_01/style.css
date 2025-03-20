@@ -1,0 +1,64 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+h1, h3{text-align: center;}
+
+div{
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#pai-1{
+  background-color: lightgreen;
+  margin: auto;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#pai-1 > div{background-color: red;}
+
+#pai-2{
+  background-color: lightgreen;
+  margin: auto;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#pai-2 *{background-color: red;}
+
+#pai-3{
+  background-color: lightgreen;
+  margin: auto;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#pai-3 > div > button{background-color: red;}
+
+#pai-4{
+  background-color: lightgreen;
+  margin: auto;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#pai-4 > div > div > button{background-color: red;}
+
+#pai-5{
+  background-color: lightgreen;
+  margin: auto;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#pai-5 button{background-color: red;}
+
+#pai-6{
+  background-color: lightgreen;
+  margin: auto;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#pai-6 *{background-color: red;}

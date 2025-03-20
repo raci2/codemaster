@@ -1,0 +1,34 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+h1, h3{text-align: center;}
+
+div{
+  padding: 20px;
+  margin: 30px auto;
+  border: 3px solid black;
+  text-align: center;
+  font-size: 32px;
+  width: 500px;
+}
+
+#div-1{
+  font-family: "Workbench", serif;
+  background-color: lightgreen;
+}
+
+#div-2{
+  background-color: #ADD8E6;
+  font-family: "Rubik Glitch Pop", serif;
+}
+
+#div-3{
+  background-color: #E0FFFE;
+  font-family: "Honk", serif;
+}
+
+#div-3 a{text-decoration: none;}
+
+#div-4{
+  background-color: #EF8080;
+  font-family: "Mogilte", serif;
+}

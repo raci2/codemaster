@@ -1,0 +1,21 @@
+p{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.classe{
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+#neve{
+  background-image: url("imagens/neve.jpg");
+  
+}
+
+#praia{
+  background-image: url("imagens/praia.jpg");
+  
+}

@@ -1,0 +1,27 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+h1, h3{text-align: center;}
+
+div{
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 30px auto;
+  border: 3px solid black;
+  text-align: justify;
+  width: 400px;
+}
+
+#div-1{ box-sizing: content-box;}
+
+#div-2{ box-sizing: border-box;}
+
+#div-3{
+  box-sizing: border-box;
+  outline: 5px solid red;
+}
+
+#div-4{
+  box-sizing: border-box;
+  outline: 5px solid red;
+  outline-offset: 5px;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 41.1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <h1>CSS [display flex + flex direction + flex wrap +  gap]</h1>
+
+    <h2>Todas as divs verder estão com "display: flex" + "width:250px" + "height:250px"</h2>
+
+    <h2>Todas as divs filhas estão com "padding: 5px"</h2>
+
+    <hr>
+
+    <h3>--- Exemplo de div com o "flex-direction:row" ---</h3>
+
+    <div class="pai" id="pai-1">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:column" ---</h3>
+
+    <div class="pai" id="pai-2">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:row-reverse" ---</h3>
+
+    <div class="pai" id="pai-3">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:column-reverse" ---</h3>
+
+    <div class="pai" id="pai-4">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <hr>
+
+    <h3>--- Exemplo de div com o "flex-direction:row" + "flex-wrap: nowrap"---</h3>
+
+    <div class="pai" id="pai-5">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:row" + "flex-wrap: wrap" ---</h3>
+
+    <div class="pai" id="pai-6">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:row" + "flex-wrap: wrap-reverse"---</h3>
+
+    <div class="pai" id="pai-7">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:column" + "flex-wrap: nowrap" ---</h3>
+
+    <div class="pai" id="pai-8">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:column" + "flex-wrap: wrap"---</h3>
+
+    <div class="pai" id="pai-9">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <h3>--- Exemplo de div com o "flex-direction:column" + "flex-wrap: wrap-reverse"---</h3>
+
+    <div class="pai" id="pai-10">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+
+    <hr>
+
+    <h3>--- Exemplo de div com o "flex-direction:row" + "flex-wrap: wrap" + "gap: 10px"---</h3>
+
+    <div class="pai" id="pai-11">
+      <div class="filho">Div 1</div>
+      <div class="filho">Div 2</div>
+      <div class="filho">Div 3</div>
+      <div class="filho">Div 4</div>
+      <div class="filho">Div 5</div>
+      <div class="filho">Div 6</div>
+      <div class="filho">Div 7</div>
+      <div class="filho">Div 8</div>
+      <div class="filho">Div 9</div>
+    </div>
+   
+  </body>
+
+</html>

@@ -1,0 +1,58 @@
+div{
+  border: 1px solid black;
+  margin: 20px 0px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+#percentagem{
+  background-color: red;
+  width: 50%;
+}
+
+#vw{
+  background-color: green;
+  width: 50vw;
+  color: white;
+}
+
+#vh{
+  background-color: blue;
+  width: 50vh;
+  color: white;
+}
+
+#vmin{
+  background-color: yellow;
+  width: 50vmin;
+}
+
+#vmax{
+  background-color: orange;
+  width: 50vmax;
+}
+
+#em{
+  background-color: violet;
+  width: 50em;
+}
+
+#rem{
+  background-color: purple;
+  width: 50rem;
+  color: white;
+}
+
+#ch{
+  background-color: cyan;
+  width: 50ch;
+}
+
+#ex{
+  background-color: brown;
+  width: 50ex;
+  color: white;
+}

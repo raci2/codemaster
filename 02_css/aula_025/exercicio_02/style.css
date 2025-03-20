@@ -1,0 +1,38 @@
+#em{
+font-size: 2em;
+}
+
+#ex{
+  color: blue;
+  font-size: 5ex;
+}
+
+#ch{
+  color: red;
+  font-size: 5ch;
+}
+
+#rem{
+  color: green;
+  font-size: 1rem;
+}
+
+#vw{
+  color: grey;
+  font-size: 2.5vw;
+}
+
+#vh{
+  color: pink;
+  font-size: 2.5vh;
+}
+
+#vmin{
+  color: orange;
+  font-size: 3vmin;
+}
+
+#vmax{
+  color: purple;
+  font-size: 3vmax;
+}

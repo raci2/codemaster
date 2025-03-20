@@ -1,0 +1,89 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  text-align: center;
+  color: white;
+}
+
+nav,footer{
+  background-color: rgb(75, 75, 75);
+  font-size: 1rem;
+}
+
+header nav{
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px 0px;
+  position: relative;
+  top: 30px;
+}
+
+header nav a{
+  text-decoration: none;
+  transition-duration: 0.5s;
+  color: white;
+  padding: 20px 30px;
+}
+
+header nav a:hover{
+  background-color: rgb(200, 200, 200);
+}
+
+header #banner{
+  background-image: url("imagens/topo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #banner div{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header #banner h1{font-size: 2.5rem;}
+
+header #banner h4{font-size: 1.25rem;}
+
+main *{font-size: 1.75rem;}
+
+main h1{
+  background-color: red;
+  margin: 0px;
+  padding: 30px;
+}
+
+main #services{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main #services *{
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+main #services *:hover{
+  color: red;
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+main #services #solar{background-image: url("imagens/solar.png");}
+main #services #eolica{background-image: url("imagens/eolica.jpg");}
+main #services #hidro{background-image: url("imagens/hidro.webp");}
+main #services #nuclear{background-image: url("imagens/energia-nuclear1.jpg");}
+
+footer{
+  padding: 12px 20px;
+}

@@ -1,0 +1,65 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+h1, h2, h3{text-align: center;}
+
+.pai{
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  border: 4px solid black;
+  box-sizing: border-box;
+}
+
+.filho{
+  padding: 5px;
+  background-color: lightsalmon;
+  border: 2px solid black;
+}
+
+#pai-1{flex-direction: row;}
+
+#pai-2{flex-direction: column;}
+
+#pai-3{flex-direction: row-reverse;}
+
+#pai-4{flex-direction: column-reverse;}
+
+#pai-5{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#pai-6{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#pai-7{
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+#pai-8{
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#pai-9{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#pai-10{
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+#pai-11{
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}

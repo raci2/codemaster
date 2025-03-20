@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 35.1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <h1>CSS [Interações de irmãos]</h1>
+
+    <hr>
+
+    <h3>--- Exemplo de seletor que verifica o "hover" no "filho-1" e afeta o "filho-5" ---</h3>
+
+    <div class="pai" id="pai-1">
+      #pai-1
+      <div class="filho-1">Filho 1</div>
+      <div class="filho-2">Filho 2</div>
+      <div class="filho-3">Filho 3</div>
+      <div class="filho-4">Filho 4</div>
+      <div class="filho-5">Filho 5</div>
+    </div>
+
+    <h3>--- Exemplo de seletor que verifica o "hover" no "filho-5" e afeta o "filho-1" ---</h3>
+
+    <div class="pai" id="pai-2">
+      #pai-2
+      <div class="filho-1">Filho 1</div>
+      <div class="filho-2">Filho 2</div>
+      <div class="filho-3">Filho 3</div>
+      <div class="filho-4">Filho 4</div>
+      <div class="filho-5">Filho 5</div>
+    </div>
+
+    <hr>
+
+    <h3>--- Exemplo de seletor que verifica o "hover" em "qualquer filho" e afeta o "todos os outros" ---</h3>
+
+    <div class="pai" id="pai-3">
+      #pai-3
+      <div class="filho">Filho 1</div>
+      <div class="filho">Filho 2</div>
+      <div class="filho">Filho 3</div>
+      <div class="filho">Filho 4</div>
+      <div class="filho">Filho 5</div>
+    </div>
+
+  </body>
+
+</html>

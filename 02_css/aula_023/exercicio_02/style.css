@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+
+.nuvem {
+  margin-right: 200px;
+  width: 100px;
+}
+
+.nuvem1 {
+  margin-right: 350px;
+  width: 100px;
+}
+
+.terra {
+  background-color: #623303;
+  height: 200px;
+  margin-top: -30px;
+}
+
+.ceu {
+  background-color: aqua;
+}
+
+p {
+  padding-top: 40px;
+  color: white;
+  margin-left: 10px;
+}

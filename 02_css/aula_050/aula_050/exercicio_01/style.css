@@ -1,0 +1,92 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+/* CABEÇALHO */
+header nav{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 29px;
+}
+header nav a{
+  background-color: rgb(75, 75, 75);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  transition-duration: 1s;
+}
+header nav a:hover{background-color: rgb(200, 200, 200);}
+
+header .banner{
+  background-image: url("imagens/topo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header .banner *{
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 5px;
+}
+header .banner h1{font-size: 2.5rem;}
+header .banner h3{font-size: 1.25rem;}
+
+
+
+
+/* MEIO */
+main h1{
+  background-color: red;
+  margin: 0px;
+  padding: 30px;
+}
+main #energias{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main #energias .card{
+  box-sizing: border-box;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 1s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #energias .card:hover{
+  color: red;
+  filter: brightness(150%);
+}
+main #energias .card:nth-of-type(1){background-image: url("imagens/solar.png");}
+main #energias .card:nth-of-type(2){background-image: url("imagens/eolica.jpg");}
+main #energias .card:nth-of-type(3){background-image: url("imagens/energia-hidreletrica-fb.webp");}
+main #energias .card:nth-of-type(4){background-image: url("imagens/nuclear.jpg");}
+
+
+
+
+/* RODAPÉ */
+footer{
+  background-color: rgb(75, 75, 75);
+  padding: 10px;
+  font-weight: bold;
+}

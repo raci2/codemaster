@@ -1,0 +1,23 @@
+p{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.classe{
+  background-size: cover;
+  border-radius: 25px;
+  margin: auto;
+}
+
+#neve{
+  background-image: url("../exercicio_03/imagens/neve.jpg");
+  width: 500px;
+  height: 300px;
+}
+
+#praia{
+  background-image: url("../exercicio_03/imagens/praia.jpg");
+  width: 350px;
+  height: 200px;
+  
+}

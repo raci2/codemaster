@@ -1,0 +1,42 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+h1, h3{text-align: center;}
+
+div{
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 30px auto;
+  border: 3px solid black;
+  text-align: justify;
+  width: 400px;
+}
+
+#div-1::selection{background-color: red;}
+
+#div-2 li::marker{color: red;}
+
+#div-3::first-letter{
+  background-color: yellow;
+  color: red;
+}
+
+#div-4::first-line{
+  background-color: yellow;
+  color: red;
+}
+
+#div-5 label::before{content: url("bob_mini.jpg");}
+
+#div-6 label::after{content: ")";}
+
+#div-7{background-color: lightcoral;}
+
+#div-7 label::before{
+  content: "";
+  background-image: url("bob_mini.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

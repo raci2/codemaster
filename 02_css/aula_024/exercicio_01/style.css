@@ -1,0 +1,40 @@
+div{
+  border: 1px solid black;
+  margin: 20px 0px;
+}
+
+h1{
+  text-align: center;
+}
+
+#px{
+  background-color: red;
+  width: 350px;
+}
+
+#cm{
+  background-color: green;
+  width: 12cm;
+  color: white;
+}
+
+#mm{
+  background-color: blue;
+  width: 150mm;
+  color: white;
+}
+
+#in{
+  background-color: yellow;
+  width: 7in;
+}
+
+#pt{
+  background-color: orange;
+  width: 300pt;
+}
+
+#pc{
+  background-color: violet;
+  width: 32pc;
+}

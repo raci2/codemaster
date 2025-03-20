@@ -1,0 +1,95 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+h1, h2, h3{text-align: center;}
+
+.pai{
+  background-color: lightgreen;
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
+  height: 400px;
+  display: flex;
+  border: 4px solid black;
+}
+
+.filho{
+  padding: 5px;
+  background-color: lightsalmon;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+
+#pai-1{
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#pai-1 .especial-1{
+  order: 1;
+  background-color: red;
+}
+
+#pai-1 .especial-2{
+  order: -1;
+  background-color: yellow;
+}
+
+#pai-2 .especial-1{
+  flex-grow: 4;
+  background-color: yellow;
+}
+
+#pai-2 .especial-2{
+  flex-grow: 2;
+  background-color: red;
+}
+
+#pai-3{justify-content: center;}
+
+#pai-3 .especial-1{
+  flex-shrink: 1;
+  background-color: purple;
+}
+
+#pai-3 .especial-2{
+  flex-shrink: 2;
+  background-color: yellow;
+}
+
+#pai-3 .especial-3{
+  flex-shrink: 4;
+  background-color: green;
+}
+
+#pai-3 .especial-4{
+  flex-shrink: 4;
+  background-color: orange;
+}
+
+#pai-4{justify-content: center;}
+
+#pai-4 .especial-1{
+  background-color: yellow;
+  flex-basis: content;
+}
+
+#pai-5{justify-content: center;}
+
+#pai-5 .especial-1{
+  background-color: yellow;
+  flex-basis: 250px;
+}
+
+#pai-6{width: 400px;}
+
+#pai-6 .especial-1{
+  background-color: yellow;
+  align-self: flex-end;
+}
+
+
+

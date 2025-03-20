@@ -1,0 +1,61 @@
+:root{
+  --cor-azul: rgb(88, 218, 207);
+  --cor-vermelho: rgb(162, 29, 29);
+  --fonte-1: "Times New Roman";
+  --fonte-2: "Courier New";
+
+  --tamanho-1: 15px;
+  --tamanho-2: calc( var(--tamanho-1) / 2 );
+  --tamanho-3: calc( var(--tamanho-1) / 4 );
+  --tamanho-4: calc( var(--tamanho-1) / 8 );
+  --tamanho-5: calc( var(--tamanho-1) / 16 );
+}
+
+
+body{
+  margin: 0px;
+}
+
+div{
+  border: 1px solid black;
+  margin: 50px 0px;
+  margin-top: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.tipo-1{
+  width: calc(100% - 15px);
+}
+.tipo-1{
+  background-color: var(--cor-vermelho);
+  color: yellow;
+  font-size: var(--tamanho-1);
+  border-width: var(--tamanho-2);
+  font-family: var(--fonte-1);
+}
+.tipo-1 button{
+  border: 2px dashed var(--cor-azul);
+  font-size: var(--tamanho-1);
+}
+.tipo-1 a{
+  color: var(--cor-azul);
+  font-size: var(--tamanho-2);
+}
+
+
+
+
+.tipo-2{
+  color: var(--cor-vermelho);
+  background-color: yellow;
+  font-size: var(--tamanho-2);
+  border-width: var(--tamanho-1);
+  font-family: var(--fonte-2);
+}
+.tipo-2 button{
+  color: var(--cor-azul);
+  font-size: var(--tamanho-2);
+}
+.tipo-2 a{border: 2px dashed var(--cor-azul);}
