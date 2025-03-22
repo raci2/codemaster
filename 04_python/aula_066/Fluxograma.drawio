@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1" pages="2">
+  <diagram name="Página-1" id="dpjzb98yyZvWu6AHqosP">
+    <mxGraphModel dx="1050" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBnjGMfqLYsIWaeoBMb_-1" target="JBnjGMfqLYsIWaeoBMb_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-1" value="A lâmpada queimou" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-2" value="Ligar a luz" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JBnjGMfqLYsIWaeoBMb_-3" target="JBnjGMfqLYsIWaeoBMb_-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-3" value="É preciso trocar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JBnjGMfqLYsIWaeoBMb_-6" target="JBnjGMfqLYsIWaeoBMb_-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBnjGMfqLYsIWaeoBMb_-6" target="JBnjGMfqLYsIWaeoBMb_-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-6" value="Tenho lampadas&lt;br&gt;em casa?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="240" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-10" value="Não" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-11" value="Sim" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JBnjGMfqLYsIWaeoBMb_-12" target="JBnjGMfqLYsIWaeoBMb_-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-12" value="Ir comprar a lâmpada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cJA65bpyjveM9aSTvmTS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBnjGMfqLYsIWaeoBMb_-13" target="JBnjGMfqLYsIWaeoBMb_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBnjGMfqLYsIWaeoBMb_-13" value="Trocar lâmpada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NxitXkxH-CItefKnQ1YC" name="Página-2">
+    <mxGraphModel dx="1050" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EWoxNHH4OQffdQ28jzd2-1" target="4dlmI1RkJQu3vWdfRZ0d-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWoxNHH4OQffdQ28jzd2-1" value="Ir para o restaurante" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4dlmI1RkJQu3vWdfRZ0d-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4dlmI1RkJQu3vWdfRZ0d-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-4" value="O restaurante tem lugares livres?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="160" width="134" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-7" value="Não" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="294" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-8" value="Sim" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="474" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4dlmI1RkJQu3vWdfRZ0d-9" target="4dlmI1RkJQu3vWdfRZ0d-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-9" value="Ir para outro" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4dlmI1RkJQu3vWdfRZ0d-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4dlmI1RkJQu3vWdfRZ0d-10" value="Fazer o pedido" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53zLl5YYlfCFmnzRsvIp-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="53zLl5YYlfCFmnzRsvIp-2" target="53zLl5YYlfCFmnzRsvIp-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53zLl5YYlfCFmnzRsvIp-2" value="Comer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53zLl5YYlfCFmnzRsvIp-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="53zLl5YYlfCFmnzRsvIp-4" target="53zLl5YYlfCFmnzRsvIp-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53zLl5YYlfCFmnzRsvIp-4" value="Pedir a conta" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53zLl5YYlfCFmnzRsvIp-6" value="Pagar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
