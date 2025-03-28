@@ -1,0 +1,16 @@
+header .carousel img{
+  height: 735px;
+}
+
+header .col-2 img{
+  width: 124px;
+  /* position: relative; */
+}
+
+header .logo{margin: 32px auto;}
+
+header .logo .col-12 img{
+  width: 55px;
+  height: 37px;
+  /* position: relative; */
+}
