@@ -1,15 +1,16 @@
 header .carousel img{height: 735px;}
 
-header .carousel-indicators button{
-  background-image: url("imagens/SVG/banner-por-selecionar.svg");
-}
-
 header .col-2 img{width: 124px;}
 
 header .logo .row .col-2{margin: 32px auto;}
+
 header .logo .row .col-12{margin: 42px auto;}
 
 header .logo .row .col-12 img{
   width: 55px;
   height: 37px;
+}
+
+header .textos{
+  margin-top: 200px;
 }
