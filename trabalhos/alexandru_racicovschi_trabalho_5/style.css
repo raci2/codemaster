@@ -1,16 +1,103 @@
-header .carousel img{height: 735px;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-header .col-2 img{width: 124px;}
+header {
+  height: 735px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url('imagens/JPG/banner4.jpg');
+}
 
-header .logo .row .col-2{margin: 32px auto;}
+header .m{margin: 32px auto;}
 
-header .logo .row .col-12{margin: 42px auto;}
+header .row .col-2 img{width: 134px;}
 
-header .logo .row .col-12 img{
+header .row .col-1 img{
+  margin-top: 10px;
   width: 55px;
   height: 37px;
 }
 
-header .textos{
-  margin-top: 200px;
+
+/* Carousel */
+header .carousel-item {
+  height: 735px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
+
+header .carousel-item h1,p{  
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  color: white;
+}
+
+
+header .carousel-item h1{
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+header .carousel-item p{font-size: 35px;}
+
+
+/* Definição das imagens do background */
+header .slide1 { background-image: url('imagens/JPG/banner4.jpg'); }
+header .slide2 { background-image: url('imagens/JPG/banner2.jpg'); }
+header .slide3 { background-image: url('imagens/JPG/banner1.jpg'); }
+header .slide4 { background-image: url('imagens/JPG/banner3.jpg'); }
+
+main .caixa{
+  margin-top: 140px;
+  width: 617px;
+  height: 473px;
+  padding: 0px 120px 0px 50px;
+  /* margin-right: 20px; */
+}
+
+main .caixa h1{
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 42px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  margin-top: 15px;
+  padding-right: 100px;
+}
+
+main .caixa h1 span{color:  #CE000F;}
+
+main .caixa p{
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+}
+
+main .ver_mais img{
+  width: 112px;
+  height: 38px;
+}
+
+/* .ver_mais {
+  display: inline-block;
+  position: relative;
+} */
+
+.img-vermelho {
+  display: none;
+}
+
+.ver_mais:hover .img-cinza {
+  display: none;
+  cursor: pointer;
+}
+
+.ver_mais:hover .img-vermelho {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
