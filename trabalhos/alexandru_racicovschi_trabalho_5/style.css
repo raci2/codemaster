@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+ 
 header {
   height: 735px;
   background-size: cover;
@@ -9,7 +9,7 @@ header {
   background-image: url('imagens/JPG/banner4.jpg');
 }
 
-header .m{margin: 32px auto;}
+header .m{margin: 32px 0px;}
 
 header .row .col-2 img{width: 134px;}
 
@@ -18,36 +18,6 @@ header .row .col-1 img{
   width: 55px;
   height: 37px;
 }
-
-
-/* Carousel */
-header .carousel-item {
-  height: 735px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-header .carousel-item h1,p{  
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  color: white;
-}
-
-
-header .carousel-item h1{
-  font-size: 55px;
-  text-transform: uppercase;
-}
-
-header .carousel-item p{font-size: 35px;}
-
-
-/* Definição das imagens do background */
-header .slide1 { background-image: url('imagens/JPG/banner4.jpg'); }
-header .slide2 { background-image: url('imagens/JPG/banner2.jpg'); }
-header .slide3 { background-image: url('imagens/JPG/banner1.jpg'); }
-header .slide4 { background-image: url('imagens/JPG/banner3.jpg'); }
 
 main .caixa{
   margin-top: 140px;
@@ -81,23 +51,93 @@ main .ver_mais img{
   height: 38px;
 }
 
-/* .ver_mais {
+main .img-vermelho {
+  display: none;
+}
+
+main .ver_mais:hover .img-cinza {
+  display: none;
+  cursor: pointer;
+}
+
+main .ver_mais:hover .img-vermelho {
   display: inline-block;
-  position: relative;
+  cursor: pointer;
+}
+
+main .galeria{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .galeria-1,.galeria-2,.galeria-3,.galeria-4{
+  width: 50%;
+  height: 460px;
+}
+
+main .galeria-1{background-image: url("imagens/JPG/banner-energia-solar.jpg");}
+main .galeria-2{background-image: url("imagens/JPG/banner-eletricidade-gas.jpg");}
+main .galeria-3{background-image: url("imagens/JPG/banner-assistencia-tecnica.jpg");}
+main .galeria-4{background-image: url("imagens/JPG/banner-plano-edp.jpg");}
+
+main .galeria h1{
+  margin-top: 150px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 42px;
+}
+/* main .galeria img{margin-top: 40px;} */
+
+main .ajuda h1{
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 42px;
+  color: #4D4D4D;
+  margin-top: 142px;
+  margin-bottom: 0px;
+}
+
+main .ajuda h1 span{color:  #CE000F;}
+
+main .ajuda p{
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  color: #4D4D4D;
+  font-weight: 300;
+  margin-top: 23px;
+  margin-bottom: 0px;
+}
+
+main .ajuda .offset-3{
+  font-family: "Roboto Condensed";
+  color: #333333;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+main .ajuda .offset-3 span{
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 17px;
+}
+
+main .ajuda .fale img{
+  width: 192px;
+  height: 38px;
+  margin-top: 10px;
+}
+
+/* main .img-vermelho {
+  display: none;
+}
+
+main .ver_mais:hover .img-cinza {
+  display: none;
+  cursor: pointer;
+}
+
+main .ver_mais:hover .img-vermelho {
+  display: inline-block;
+  cursor: pointer;
 } */
-
-.img-vermelho {
-  display: none;
-}
-
-.ver_mais:hover .img-cinza {
-  display: none;
-  cursor: pointer;
-}
-
-.ver_mais:hover .img-vermelho {
-  display: inline-block;
-  cursor: pointer;
-}
-
-
