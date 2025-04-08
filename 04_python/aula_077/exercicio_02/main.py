@@ -1,0 +1,25 @@
+from funcoes import *
+
+limpa()
+
+print("C")
+aguarde(0.2)
+print(" o")
+aguarde(0.2)
+print("  d")
+aguarde(0.2)
+print("   e")
+aguarde(0.2)
+print("    m")
+aguarde(0.2)
+print("     a")
+aguarde(0.2)
+print("      s")
+aguarde(0.2)
+print("       t")
+aguarde(0.2)
+print("        e")
+aguarde(0.2)
+print("         r")
+
+print("\n\n")

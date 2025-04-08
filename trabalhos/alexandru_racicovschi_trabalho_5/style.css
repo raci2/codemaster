@@ -69,6 +69,7 @@ main .galeria{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 main .galeria-1,.galeria-2,.galeria-3,.galeria-4{
@@ -128,16 +129,18 @@ main .ajuda .fale img{
   margin-top: 10px;
 }
 
-/* main .img-vermelho {
+main .img-vermelho {
   display: none;
 }
 
-main .ver_mais:hover .img-cinza {
+main .fale:hover .img-cinza {
   display: none;
   cursor: pointer;
 }
 
-main .ver_mais:hover .img-vermelho {
+main .fale:hover .img-vermelho {
   display: inline-block;
   cursor: pointer;
-} */
+}
+
+main .fale{margin-bottom: 165px;}

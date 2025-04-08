@@ -9,7 +9,7 @@ def salario_novo():
   novo_salario = salario * (1 + percentagem)
   
 
-  print(F"\nO novo salrio é: ({novo_salario:.2f})")
+  print(F"\nO novo salario é: ({novo_salario:.2f})")
 
 salario_novo()
 
