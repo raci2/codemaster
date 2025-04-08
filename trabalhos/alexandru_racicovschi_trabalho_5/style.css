@@ -88,7 +88,6 @@ main .galeria h1{
   font-weight: bold;
   font-size: 42px;
 }
-/* main .galeria img{margin-top: 40px;} */
 
 main .ajuda h1{
   font-family: "Roboto Condensed";
@@ -144,3 +143,20 @@ main .fale:hover .img-vermelho {
 }
 
 main .fale{margin-bottom: 165px;}
+
+main .agente{background-image: url("imagens/JPG/banner-torne-se-um-agente.jpg");}
+
+main .agente h1{
+  margin-top: 118px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 55px;
+}
+
+main .agente h1 span{color: #CE000F;}
+
+main .agente p{
+  font-family: "Roboto Condensed";
+  font-weight: light;
+  font-size: 25px;
+}
