@@ -24,7 +24,6 @@ main .caixa{
   width: 617px;
   height: 473px;
   padding: 0px 120px 0px 50px;
-  /* margin-right: 20px; */
 }
 
 main .caixa h1{
@@ -51,14 +50,9 @@ main .ver_mais img{
   height: 38px;
 }
 
-main .img-vermelho {
-  display: none;
-}
+main .ver_mais .img-vermelho {display: none;}
 
-main .ver_mais:hover .img-cinza {
-  display: none;
-  cursor: pointer;
-}
+main .ver_mais:hover .img-cinza {display: none;}
 
 main .ver_mais:hover .img-vermelho {
   display: inline-block;
@@ -69,7 +63,6 @@ main .galeria{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 main .galeria-1,.galeria-2,.galeria-3,.galeria-4{
@@ -122,32 +115,37 @@ main .ajuda .offset-3 span{
   margin-right: 17px;
 }
 
-main .ajuda .fale img{
+main .ajuda .fale .fale-img{
   width: 192px;
   height: 38px;
   margin-top: 10px;
 }
 
-main .img-vermelho {
-  display: none;
+main .ajuda .fale .fale-img img{
+  width: 192px;
+  height: 38px;
 }
 
-main .fale:hover .img-cinza {
-  display: none;
-  cursor: pointer;
-}
+main .fale .fale-img .img-vermelho {display: none;}
 
-main .fale:hover .img-vermelho {
+main .fale .fale-img:hover .img-cinza {display: none;}
+
+main .fale .fale-img:hover .img-vermelho {
   display: inline-block;
   cursor: pointer;
 }
 
 main .fale{margin-bottom: 165px;}
 
-main .agente{background-image: url("imagens/JPG/banner-torne-se-um-agente.jpg");}
+main .agente{
+  background-image: url("imagens/JPG/banner-torne-se-um-agente.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 main .agente h1{
-  margin-top: 118px;
+  margin-top: 60px; 
   font-family: "Roboto Condensed";
   font-weight: bold;
   font-size: 55px;
@@ -159,4 +157,23 @@ main .agente p{
   font-family: "Roboto Condensed";
   font-weight: light;
   font-size: 25px;
+}
+
+main .agente img{
+  width: 154px;
+  height: 48px;
+}
+
+main .agente .agente-img{
+  width: 154px; 
+  height: 48px;
+  margin: 55px auto;
+}
+main .agente .agente-img .img-cinza {display: none;}
+
+main .agente .agente-img:hover .img-vermelho {display: none;}
+
+main .agente .agente-img:hover .img-cinza {
+  display: inline-block;
+  cursor: pointer;
 }
