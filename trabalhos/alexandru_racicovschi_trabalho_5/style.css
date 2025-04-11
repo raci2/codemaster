@@ -50,11 +50,16 @@ main .ver_mais img{
   height: 38px;
 }
 
-main .ver_mais .img-vermelho {display: none;}
+main .ver_mais .ver-mais-img{
+  width: 112px;
+  margin: auto;
+}
 
-main .ver_mais:hover .img-cinza {display: none;}
+main .ver_mais .ver-mais-img .img-vermelho {display: none;}
 
-main .ver_mais:hover .img-vermelho {
+main .ver_mais .ver-mais-img:hover .img-cinza {display: none;}
+
+main .ver_mais .ver-mais-img:hover .img-vermelho {
   display: inline-block;
   cursor: pointer;
 }
@@ -177,3 +182,24 @@ main .agente .agente-img:hover .img-cinza {
   display: inline-block;
   cursor: pointer;
 }
+
+footer .menu{
+  height: 135px;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .menu a{
+  margin: 0px 30px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .menu a.active{color: #CE000F;}
+
+footer .menu a:hover{color: #CE000F;}
