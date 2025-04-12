@@ -191,7 +191,7 @@ footer .menu{
   align-items: center;
 }
 
-footer .menu a{
+footer .menu a, footer .final .icone p{
   margin: 0px 30px;
   font-family: "Roboto Condensed";
   font-weight: bold;
@@ -203,3 +203,23 @@ footer .menu a{
 footer .menu a.active{color: #CE000F;}
 
 footer .menu a:hover{color: #CE000F;}
+
+footer .final{
+  height: 245px;
+  background-color: #1A1A1A;
+}
+
+footer .final .icone{
+  margin-top: 40px;
+
+}
+
+footer .final .icone p{margin: 0px 20px;}
+
+footer .final .copy{
+  margin-top: 25px;
+  /* margin-bottom: 60px; */
+  font-family: "Roboto Condensed";
+  font-size: 15px;
+  color: white;
+}
