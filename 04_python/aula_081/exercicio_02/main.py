@@ -8,8 +8,6 @@ print(f"\n=== TABUADA DO ({numero}) ===\n")
 
 loop = 0
 
-
-
 while(loop <= 10):
   resultado =  loop * numero
   print(f"{loop} X {numero} = {resultado}")

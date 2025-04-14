@@ -183,7 +183,7 @@ main .agente .agente-img:hover .img-cinza {
   cursor: pointer;
 }
 
-footer .menu{
+footer .menu {
   height: 135px;
   background-color: #232323;
   display: flex;
@@ -191,8 +191,8 @@ footer .menu{
   align-items: center;
 }
 
-footer .menu a, footer .final .icone p{
-  margin: 0px 30px;
+footer .menu a, footer .final p.m-0{
+  margin: 0px 25px;
   font-family: "Roboto Condensed";
   font-weight: bold;
   font-size: 18px;
@@ -200,26 +200,46 @@ footer .menu a, footer .final .icone p{
   text-decoration: none;
 }
 
-footer .menu a.active{color: #CE000F;}
+footer .menu a.active,footer .menu a:hover {color: #CE000F;}
 
-footer .menu a:hover{color: #CE000F;}
-
-footer .final{
-  height: 245px;
+footer .final {
   background-color: #1A1A1A;
+  height: 245px;
 }
 
-footer .final .icone{
-  margin-top: 40px;
-
+.social-icon {
+  width: 50px;
+  height: 50px;
 }
 
-footer .final .icone p{margin: 0px 20px;}
+.separador {
+  width: 1px;
+  height: 85px;
+  background-color: #4D4D4D;
+  margin-bottom: -80px;
+}
+
+footer .final .icone{margin-top: 85px;}
+
+footer .final .icone .ralc{
+  margin-left: 36px;
+  margin-right: 60px;
+}
 
 footer .final .copy{
-  margin-top: 25px;
-  /* margin-bottom: 60px; */
+  margin-top: 30px;
   font-family: "Roboto Condensed";
   font-size: 15px;
   color: white;
 }
+
+footer .final .face .img-vermelho, .insta .img-vermelho, .link .img-vermelho {display: none;}
+
+footer .final .face:hover .img-cinza, .insta:hover .img-cinza, .link:hover .img-cinza {display: none;}
+
+footer .final .face:hover .img-vermelho, .insta:hover .img-vermelho, .link:hover .img-vermelho {
+  display: inline-block;
+  cursor: pointer;
+}
+
+footer .final .face, .insta, .link{margin-right: 30px;}
