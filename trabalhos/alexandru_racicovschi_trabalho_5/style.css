@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
- 
-header {
-  height: 735px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-image: url('imagens/JPG/banner4.jpg');
+
+/* header .m{
+  margin: 32px 0px; 
+  position: absolute;
+  z-index: 1;
+} */
+
+header .row .col-2 img{
+  width: 134px;
+  position: absolute;
+  z-index: 1;
 }
-
-header .m{margin: 32px 0px;}
-
-header .row .col-2 img{width: 134px;}
 
 header .row .col-1 img{
   margin-top: 10px;
   width: 55px;
-  height: 37px;
+  height: 37;
+  position: absolute;
+  z-index: 1;
+}
+
+header .col-12{
+  height: 735px;
 }
 
 main .caixa{
