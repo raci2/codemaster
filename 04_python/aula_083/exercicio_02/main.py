@@ -4,7 +4,7 @@ limpa()
 
 print("===== Gerador de Números =====\n")
 
-numero = int(input("- Quantos elemenos existirá em sua liosta númerica? "))
+numero = int(input("- Quantos elemenos existirá em sua lista númerica? "))
 
 print()
 
