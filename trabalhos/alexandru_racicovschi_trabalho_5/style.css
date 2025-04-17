@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* header .m{
-  margin: 32px 0px; 
-  position: absolute;
-  z-index: 1;
-} */
-
 header .row .col-2 img{
   width: 134px;
   position: absolute;
@@ -22,6 +16,34 @@ header .row .col-1 img{
 }
 
 header .col-12{height: 735px;}
+
+.carousel-indicators {
+  display: flex;          
+  align-items: center;    
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-right: 95px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-image: url("imagens/SVG/banner-por-selecionar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0px 25px;
+}
+
+.carousel-indicators .active {
+  width: 24px;
+  height: 24px;
+  background-image: url('imagens/SVG/banner-selecionado.svg');
+  background-color: transparent;
+}
 
 main .caixa{
   margin-top: 140px;
