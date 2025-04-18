@@ -17,7 +17,7 @@ header .row .col-1 img{
 
 header .col-12{height: 735px;}
 
-.carousel-indicators {
+header .carousel-indicators {
   display: flex;          
   align-items: center;    
   justify-content: center;
@@ -25,7 +25,7 @@ header .col-12{height: 735px;}
   margin-right: 95px;
 }
 
-.carousel-indicators [data-bs-target] {
+header .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
   background-image: url("imagens/SVG/banner-por-selecionar.svg");
@@ -38,11 +38,30 @@ header .col-12{height: 735px;}
   margin: 0px 25px;
 }
 
-.carousel-indicators .active {
+header .carousel-indicators .active {
   width: 24px;
   height: 24px;
   background-image: url('imagens/SVG/banner-selecionado.svg');
   background-color: transparent;
+}
+
+header .carousel-caption{
+  margin-bottom: 160px;
+  margin-left: 100px;
+}
+
+header .carousel-caption h5{
+  font-size: 55px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-align: left;
+}
+
+header .carousel-caption p{
+  font-size: 35px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-align: left;
 }
 
 main .caixa{
@@ -271,12 +290,12 @@ footer .final {
   height: 245px;
 }
 
-.social-icon {
+footer .social-icon {
   width: 50px;
   height: 50px;
 }
 
-.separador {
+footer .separador {
   width: 1px;
   height: 85px;
   background-color: #4D4D4D;

@@ -1,1 +1,0 @@
-soma_total = 0
