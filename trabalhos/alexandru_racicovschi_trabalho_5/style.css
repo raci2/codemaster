@@ -90,22 +90,18 @@ main .caixa p{
   color: #333333;
 }
 
-main .ver_mais img{
-  width: 112px;
-  height: 38px;
-}
-
 main .ver_mais .ver-mais-img{
   width: 112px;
+  height: 38px;
   margin: auto;
+  background-image: url("imagens/SVG/botao-vermais-cinza.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main .ver_mais .ver-mais-img .img-vermelho {display: none;}
-
-main .ver_mais .ver-mais-img:hover .img-cinza {display: none;}
-
-main .ver_mais .ver-mais-img:hover .img-vermelho {
-  display: inline-block;
+main .ver_mais .ver-mais-img:hover{
+  background-image: url("imagens/SVG/botao-vermais-vermelho.svg");
   cursor: pointer;
 }
 
@@ -186,22 +182,16 @@ main .ajuda .offset-3 span{
 }
 
 main .ajuda .fale .fale-img{
-  width: 192px;
-  height: 38px;
-  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  background-image: url("imagens/SVG/fale-connosco-cinza.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main .ajuda .fale .fale-img img{
-  width: 192px;
-  height: 38px;
-}
-
-main .fale .fale-img .img-vermelho {display: none;}
-
-main .fale .fale-img:hover .img-cinza {display: none;}
-
-main .fale .fale-img:hover .img-vermelho {
-  display: inline-block;
+main .ajuda .fale .fale-img:hover{
+  background-image: url("imagens/SVG/fale-connosco-vermelho.svg");
   cursor: pointer;
 }
 
@@ -246,23 +236,18 @@ main .agente p{
   font-size: 25px;
 }
 
-main .agente img{
-  width: 154px;
-  height: 48px;
-}
-
 main .agente .agente-img{
   width: 154px; 
   height: 48px;
   margin: 55px auto;
+  background-image: url("imagens/SVG/botao-saber- mais-vermelho.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main .agente .agente-img .img-cinza {display: none;}
-
-main .agente .agente-img:hover .img-vermelho {display: none;}
-
-main .agente .agente-img:hover .img-cinza {
-  display: inline-block;
+main .agente .agente-img:hover{
+  background-image: url("imagens/SVG/saber-mais-cinza.svg");
   cursor: pointer;
 }
 
