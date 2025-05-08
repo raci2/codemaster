@@ -15,7 +15,7 @@ def cadastrar():
   print("--- Novo Colaborador ---\n")
   nome = input("- Digite o NOME do novo colaborador(a): ")
   cargo = input("- Digite o CARGO do novo colaborador(a): ")
-  ordenado = int(input("- Digite o ORDENADO do novo colaborador(a): "))
+  ordenado = float(input("- Digite o ORDENADO do novo colaborador(a): "))
   novo_colaborador = [nome, cargo, ordenado]
 
   if (nome != "" and cargo != "" and ordenado > 0): 
@@ -40,7 +40,7 @@ def editar():
 
     if(coluna == 0): globais.pessoas[id][coluna] = input(f"- Digite o NOME que substituirá ({globais.pessoas[id][coluna]}): ")
     elif(coluna == 1): globais.pessoas[id][coluna] = input(f"- Digite o CARGO que substituirá ({globais.pessoas[id][coluna]}): ")
-    elif(coluna == 2): globais.pessoas[id][coluna] = int(input(f"- Digite o ORDENADO que substituirá ({globais.pessoas[id][coluna]} €): "))
+    elif(coluna == 2): globais.pessoas[id][coluna] = float(input(f"- Digite o ORDENADO que substituirá ({globais.pessoas[id][coluna]} €): "))
     elif(coluna == -1): print("\n--- OPERAÇÃO CANCELADA ---")
     else: print("\n--- OPÇÃO INVÁLIDA ---")
   else: print("\n--- ID INVÁLIDO ---")
@@ -65,7 +65,7 @@ def listar(titulo,info):
 
   if(info):
     print(f"\nTotal de Colaboradores ({i+1})")
-    print(f"Ordenado total mensal da equipa: ({ordenado_total} €)")
+    print(f"Ordenado total mensal da equipa: ({ordenado_total:.2f} €)")
 
 def animar(frase, tempo):
   limpa()
