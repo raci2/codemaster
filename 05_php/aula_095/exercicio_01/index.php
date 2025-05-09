@@ -1,6 +1,8 @@
 <?php
 
-echo "Hello World";
-echo "Bye World";
+echo "=== Dados ===";
+echo "<br>Nome: (Alexandru)";
+echo "<br>Morada: (Lagos)";
+echo "<br>Idade: (19)";
 
 ?>
