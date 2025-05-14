@@ -25,7 +25,7 @@ def registar():
   print("\n--- SUCESSO! ---")
 
 def editar():
-  print("--- Editar Colaborador ---\n")
+  print("--- Editar Produto ---\n")
   listar_produtos(False)
   linha = int(input("\n- Digite o ID do produto que queres editar: "))- 1
   print()
@@ -44,15 +44,15 @@ def editar():
     print()
 
     if(coluna == 0):
-      c["nome"] = input(f"- Digite o NOME que substituirá ({c['nome']}): ")
+      c["nome"] = input(f"- Digite o nome que substituirá ({c['nome']}): ")
       print("\n--- SUCESSO! ---")
 
     elif(coluna == 1):
-      c['preco'] = float(input(f"- Digite o CARGO que substituirá ({c['preco']:.2f}): "))
+      c['preco'] = float(input(f"- Digite o preço para substituirá ({c['preco']:.2f} €): "))
       print("\n--- SUCESSO! ---")
 
     elif(coluna == 2):
-      c['quantidade'] = int(input(f"- Digite o ORDENADO que substituirá ({c['quantidade']}): "))
+      c['quantidade'] = int(input(f"- Digite a quantidade para substituirá ({c['quantidade']}): "))
       print("\n--- SUCESSO! ---")
 
     elif(coluna == -1): print("--- OPERAÇÃO CANCELADA! ---")
@@ -63,13 +63,13 @@ def editar():
 
 
 def apagar():
-  print("--- Apagar Colaborador ---\n")
+  print("--- Apagar Produto ---\n")
   listar_produtos(False)
-  linha = int(input("\n- Digite o ID do colaborador a ser apagado: "))
+  linha = int(input("\n- Digite o ID do produto que queres apagar: "))-1
   print()
   if(linha >= 0 and linha < len(globais.produtos)):
-    print(f"--- ( {globais.produtos[linha]['nome']} ) APAGADO(A) COM SUCESSO! ---")
     globais.produtos.pop(linha)
+    print("\n--- SUCESSO! ---")
   else: print("--- ID INVÁLIDO! ---")
 
 def listar_produtos(com_titulo):
@@ -80,16 +80,48 @@ def listar_produtos(com_titulo):
     linha = globais.produtos[i]
     print(f"#{i+1} - (Nome: {linha['nome']}) (Preço: {linha['preco']:.2f} €) (Quantidade: {linha['quantidade']}).")
     soma_total += linha['preco']
-  
-  if(com_titulo): 
-    print(f"\nTotal de colaboradores: ({len(globais.produtos)})")
-    print(f"Ordenado total mensal da equipa: ({soma_total:.2f} €)")
 
 def vender():
-  pass
+  print("--- Vender Produto ---\n")
+  listar_produtos(False)
+  linha = int(input("\n- Digite o ID do produto que queres vender: ")) - 1
+  print()
+  if(linha >= 0 and linha < len(globais.produtos)):
+    quantidade_venda = int(input(f"- Digite a quantidade de ({globais.produtos[linha]['nome']}) que será vendida: "))
+    venda_total = globais.produtos[linha]['preco'] * quantidade_venda
+    if(quantidade_venda >= 0 and quantidade_venda <= globais.produtos[linha]['quantidade']):
+      globais.produtos[linha]['quantidade'] -= quantidade_venda
+
+      globais.vendas.append((
+        globais.numero_venda,
+        globais.produtos[linha]['nome'],
+        quantidade_venda,
+        globais.produtos[linha]['preco'],
+        venda_total
+      ))
+
+      print(f"Venda #{globais.numero_venda} - {globais.produtos[linha]['nome']} ({globais.produtos[linha]['preco']:.2f} €) x ({quantidade_venda}) = ({venda_total:.2f} €)")
+      globais.numero_venda += 1
+      print("\n--- SUCESSO! ---")
+    else:
+      print("--- QUANTIDADE INVÁLIDA! ---")
+  else:
+    print("--- ID INVÁLIDO! ---")
+
 
 def listar_vendas():
-  pass
+  print("--- Lista de Vendas ---\n")
+  if(len(globais.vendas) == 0):
+    print("Ainda não foram feitas vendas.")
+    return
+
+  total_geral = 0
+  for venda in globais.vendas:
+    numero, nome, quantidade, preco, total = venda
+    print(f"Venda #{numero} - {nome} ({preco:.2f} €) x ({quantidade}) = ({total:.2f} €)")
+    total_geral += total
+
+  print(f"Valor total das vendas: ({total_geral:.2f} €)")
 
 
 
