@@ -100,11 +100,11 @@ def vender():
         venda_total
       ))
 
-      print(f"Venda #{globais.numero_venda} - {globais.produtos[linha]['nome']} ({globais.produtos[linha]['preco']:.2f} €) x ({quantidade_venda}) = ({venda_total:.2f} €)")
+      print(f"\nVenda #{globais.numero_venda} - {globais.produtos[linha]['nome']} ({globais.produtos[linha]['preco']:.2f} €) x ({quantidade_venda}) = ({venda_total:.2f} €)")
       globais.numero_venda += 1
       print("\n--- SUCESSO! ---")
     else:
-      print("--- QUANTIDADE INVÁLIDA! ---")
+      print("\n--- QUANTIDADE INVÁLIDA! ---")
   else:
     print("--- ID INVÁLIDO! ---")
 
@@ -121,7 +121,7 @@ def listar_vendas():
     print(f"Venda #{numero} - {nome} ({preco:.2f} €) x ({quantidade}) = ({total:.2f} €)")
     total_geral += total
 
-  print(f"Valor total das vendas: ({total_geral:.2f} €)")
+  print(f"\nValor total das vendas: ({total_geral:.2f} €)")
 
 
 
