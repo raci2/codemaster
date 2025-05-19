@@ -1,0 +1,19 @@
+.div-1{
+  width: 800px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin:  40px auto;
+  height: 200px;
+  background-color: grey;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div img{
+  height: 200px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+div .texto{
+  padding: 10px 20px
+}
