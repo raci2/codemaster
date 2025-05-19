@@ -33,7 +33,7 @@ def editar():
   if(linha >= 0 and linha < len(globais.produtos)):
     produto = globais.produtos[linha]
 
-    print(f"#{linha+1} - (Nome: {produto['nome']}) (Preço: {c['preco']:.2f} €) (Quantidade: {produto['quantidade']}).")
+    print(f"#{linha+1} - (Nome: {produto['nome']}) (Preço: {produto['preco']:.2f} €) (Quantidade: {produto['quantidade']}).")
     print("\n--- Menu de edição ---\n")
     print("1 - Nome.")
     print("2 - Preço.")
