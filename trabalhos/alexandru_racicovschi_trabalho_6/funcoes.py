@@ -31,7 +31,7 @@ def editar():
   print()
 
   if(linha >= 0 and linha < len(globais.produtos)):
-    c = globais.produtos[linha]
+    produto = globais.produtos[linha]
 
     print(f"#{linha+1} - (Nome: {c['nome']}) (Preço: {c['preco']:.2f} €) (Quantidade: {c['quantidade']}).")
     print("\n--- Menu de edição ---\n")
@@ -44,15 +44,15 @@ def editar():
     print()
 
     if(coluna == 0):
-      c["nome"] = input(f"- Digite o nome que substituirá ({c['nome']}): ")
+      produto["nome"] = input(f"- Digite o nome que substituir ({produto['nome']}): ")
       print("\n--- SUCESSO! ---")
 
     elif(coluna == 1):
-      c['preco'] = float(input(f"- Digite o preço para substituirá ({c['preco']:.2f} €): "))
+      produto['preco'] = float(input(f"- Digite o preço para substituir ({produto['preco']:.2f} €): "))
       print("\n--- SUCESSO! ---")
 
     elif(coluna == 2):
-      c['quantidade'] = int(input(f"- Digite a quantidade para substituirá ({c['quantidade']}): "))
+      produto['quantidade'] = int(input(f"- Digite a quantidade para substituir ({produto['quantidade']}): "))
       print("\n--- SUCESSO! ---")
 
     elif(coluna == -1): print("--- OPERAÇÃO CANCELADA! ---")
