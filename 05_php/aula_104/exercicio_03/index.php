@@ -19,8 +19,8 @@ $form = !empty($cor);
     <form class="caixa" action="index.php" method="GET">
       <label for="roupas">Cor das roupas</label>
       <select name="cor" id="roupas">
-        <option value="Branca">Branca</option>
-        <option value="Preta">Preta</option>
+        <option value="Brancas" <?= $cor == "Brancas" ? "selected" : "" ?>>Branca</option>
+        <option value="Pretas" <?= $cor == "Pretas" ? "selected" : "" ?>>Preta</option>
       </select>
       <br><br>
       <input type="submit" value="Enviar">
@@ -29,8 +29,9 @@ $form = !empty($cor);
     <?php if ($form) { ?>
       <div class="caixa">
         <h3>Roupas <?= $cor ?></h3>
+        <br>
         <div class="imagens">
-          <?php if ($cor == "Branca") { ?>
+          <?php if ($cor == "Brancas") { ?>
             <img src="imagens/t-shirt.png" alt="T-shirt Branca">
             <img src="imagens/calca.png" alt="Calça Branca">
             <img src="imagens/chapeu.png" alt="Chapéu Branco">
