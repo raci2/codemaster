@@ -1,0 +1,69 @@
+body{
+  background-color: black;
+  color: white;  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.caixa{
+  background-color: #404040;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.caixa h3{margin: 0px;}
+.caixa input{
+  padding: 5px 20px;
+  text-align: center;
+  border: 0px;
+
+} 
+
+input[type="submit"],button{
+  padding: 5px 20px;
+  border: 0px;
+  cursor: pointer;
+}
+.caixa input[type="submit"]:hover, button:hover{
+  background-color: rgba(255, 255, 255, 80%);
+  color: rgb(60, 60, 60);
+}
+input[type="color"]{
+  padding: 0px 2px;
+  border-radius: 2px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.moedas{
+  display: flex;
+  justify-content: center;
+}
+
+.moedas label{
+  margin: 0px 10px;
+}
+
+img{
+  width: 50%;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.raio{
+  position: absolute;
+  z-index: 1;
+  bottom: 90px;
+  left: 440px;
+  color: red;
+}
+
+.comp{
+  position: absolute;
+  z-index: 1;
+  color: red;
+  bottom: 78px;
+  right: 320px;
+}
