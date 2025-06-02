@@ -1,0 +1,89 @@
+body{
+  background-color: black;
+  color: black;  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.caixa{
+  background-color: rgba(255,255,255,15%);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid lightgray;
+}
+
+.caixa h3{
+  margin: 0px;
+  color: white;
+}
+
+.caixa input, textarea{
+  background-color: #939393;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 20px;
+  border: 1px solid white;
+} 
+
+textarea{
+  width: 70%;
+  height: 100px;
+}
+
+input::placeholder,textarea::placeholder {
+  color: black;
+}
+
+input[type="submit"],button{
+  background-color: transparent;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.caixa input[type="submit"]:hover, button:hover{
+  background-color: rgba(255, 255, 255, 80%);
+  color: rgb(60, 60, 60);
+}
+input[type="color"]{
+  padding: 0px 2px;
+  border-radius: 2px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.result{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-1{
+  width: 800px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin:  40px auto;
+  height: 200px;
+  background-color: #808080;
+  display: flex;
+}
+
+.especial{
+  border: 2px solid aqua;
+  background-color: #126565;
+}
+
+p{text-align: justify;}
+
+div img{
+  height: 200px;
+  width: 320px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+div .texto{
+  padding: 10px 20px;
+  width: 100%;
+}
