@@ -2,8 +2,8 @@
 $nome = $_GET["nome"] ?? "";
 $foto = $_GET["foto"] ?? "";
 $descricao = $_GET["descricao"] ?? "";
-$anterior = $_GET["anterior"] ?? 0;
-$posterior = $_GET["posterior"] ?? 0;
+$anterior = intval($_GET["anterior"]) ?? 0;
+$posterior = intval($_GET["posterior"]) ?? 0;
 
 $form = !empty($nome) && !empty($foto) && !empty($descricao);
 ?>
