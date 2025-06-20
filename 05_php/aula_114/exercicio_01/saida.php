@@ -38,9 +38,8 @@ if($form){
             $data_reversa = $partes[2] . "-" . $partes[1] . "-" . $partes[0];
             $valor = floatval($recibos[$i]);
             $valor_total += $valor;
-            $class = ($i % 2 == 0) ? "bg-cinza" : "bg-preto";
 
-            echo "<tr class='$class'>";
+            echo "<tr>";
             echo "<td>" . ($i + 1) . "</td>";
             echo "<td>{$recibos[$i]}€</td>";
             echo "<td>$data_reversa</td>";
