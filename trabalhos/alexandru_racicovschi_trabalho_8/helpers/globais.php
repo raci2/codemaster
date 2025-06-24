@@ -12,7 +12,8 @@ $carousel = [
   new Banner("Texto 1", "Sou o texto 1", "public/imagens/paisagem_1.avif"),
   new Banner("Texto 2", "Sou o texto 2", "public/imagens/paisagem_2.avif"),
   new Banner("Texto 3", "Sou o texto 3", "public/imagens/paisagem_3.avif"),
-  new Banner("Texto 4", "Sou o texto 4", "public/imagens/paisagem_4.avif")
+  new Banner("Texto 4", "Sou o texto 4", "public/imagens/paisagem_4.avif"),
+  new Banner("Texto 5", "Sou o texto 5", "public/imagens/paisagem_2.avif"),
 ];
 
 ?>
