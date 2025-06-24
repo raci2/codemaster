@@ -1,0 +1,9 @@
+body{
+  max-width: 1280px;
+  margin: auto;
+}
+.carousel img{
+  height: 50vw;
+  max-height: 750px;
+  object-fit: cover;
+}
