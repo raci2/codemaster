@@ -1,0 +1,355 @@
+body{
+  max-width: 1280px;
+  margin: auto;
+}
+.logo{margin-top: 35px;}
+.logo img{
+  width: 317px;
+  height: 44px;
+}
+
+.navbar{
+  
+  margin-top: 10px;
+  background-color: #333333 !important;
+  width: 795px;
+  height: 70px;
+  top: 35px;
+  z-index: 1;
+}
+
+.navbar a{
+  font-family: 'DIN Pro Cond Medium';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba(211, 211, 211, 0.80);
+}
+
+.navbar a:hover{
+  /* font-family: 'DIN Pro Cond Black'; */
+  border-top: 3px solid red;
+  color: white;
+}
+
+a.active{
+  color: white !important;
+  border-top: 3px solid red;
+}
+
+span{border-bottom: 3px solid red;}
+
+.t1{
+  font-family: 'DIN Pro Cond Medium';
+  font-size: 46px;
+  color: #4d4d4d;
+  margin-top: 90px;
+}
+
+.almada{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.almada img{
+  width: 460px !important;
+  height: 450px;
+}
+/* 
+header .carousel-indicators {
+  display: flex;          
+  align-items: center;    
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-right: 95px;
+}
+
+header .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-image: url("imagens/SVG/banner-por-selecionar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0px 25px;
+}
+
+header .carousel-indicators .active {
+  width: 24px;
+  height: 24px;
+  background-image: url('imagens/SVG/banner-selecionado.svg');
+  background-color: transparent;
+}
+
+header .carousel-caption{
+  margin-bottom: 160px;
+  margin-left: 100px;
+}
+
+header .carousel-caption h5{
+  font-size: 55px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-align: left;
+}
+
+header .carousel-caption p{
+  font-size: 35px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-align: left;
+}
+
+main .caixa{
+  margin-top: 140px;
+  width: 617px;
+  height: 473px;
+  padding: 0px 120px 0px 50px;
+}
+
+main .caixa h1{
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 42px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  margin-top: 15px;
+  padding-right: 100px;
+}
+
+main .caixa h1 span{color:  #CE000F;}
+
+main .caixa p{
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+}
+
+main .ver_mais .ver-mais-img{
+  width: 112px;
+  height: 38px;
+  margin: auto;
+  background-image: url("imagens/SVG/botao-vermais-cinza.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .ver_mais .ver-mais-img:hover{
+  background-image: url("imagens/SVG/botao-vermais-vermelho.svg");
+  cursor: pointer;
+}
+
+main .galeria {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .galeria-1, main .galeria-2, main .galeria-3, main .galeria-4 {
+  position: relative;
+  width: 50%;
+  height: 460px;
+}
+
+main .galeria-1 {background-image: url("imagens/JPG/banner-energia-solar.jpg");}
+main .galeria-2 {background-image: url("imagens/JPG/banner-eletricidade-gas.jpg");}
+main .galeria-3 {background-image: url("imagens/JPG/banner-assistencia-tecnica.jpg");}
+main .galeria-4 {background-image: url("imagens/JPG/banner-plano-edp.jpg");}
+
+main .galeria-1::before, main .galeria-2::before, main .galeria-3::before, main .galeria-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+main .galeria-1 > h1, main .galeria-2 > h1, main .galeria-3 > h1, main .galeria-4 > h1 {
+  position: relative;
+  z-index: 2;
+  margin-top: 150px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 42px;
+}
+
+main .galeria img {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+main .ajuda h1{
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 42px;
+  color: #4D4D4D;
+  margin-top: 142px;
+  margin-bottom: 0px;
+}
+
+main .ajuda h1 span{color:  #CE000F;}
+
+main .ajuda p{
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  color: #4D4D4D;
+  font-weight: 300;
+  margin-top: 23px;
+  margin-bottom: 0px;
+}
+
+main .ajuda .offset-3{
+  font-family: "Roboto Condensed";
+  color: #333333;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+main .ajuda .offset-3 span{
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 17px;
+}
+
+main .ajuda .fale .fale-img{
+  width: 200px;
+  height: 40px;
+  background-image: url("imagens/SVG/fale-connosco-cinza.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .ajuda .fale .fale-img:hover{
+  background-image: url("imagens/SVG/fale-connosco-vermelho.svg");
+  cursor: pointer;
+}
+
+main .fale{margin-bottom: 165px;}
+
+main .agente {
+  position: relative;
+  background-image: url("imagens/JPG/banner-torne-se-um-agente.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .agente::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+main .agente > div {
+  position: relative;
+  z-index: 2;
+}
+
+main .agente h1{
+  margin-top: 60px; 
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 50px;
+}
+
+main .agente h1 span{color: #CE000F;}
+
+main .agente p{
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 25px;
+}
+
+main .agente .agente-img{
+  width: 154px; 
+  height: 48px;
+  margin: 55px auto;
+  background-image: url("imagens/SVG/botao-saber- mais-vermelho.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .agente .agente-img:hover{
+  background-image: url("imagens/SVG/saber-mais-cinza.svg");
+  cursor: pointer;
+} */
+
+footer .menu {
+  height: 135px;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .menu a, footer .final p.m-0{
+  margin: 0px 25px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .menu a.active,footer .menu a:hover {color: #CE000F;}
+
+footer .final {
+  background-color: #1A1A1A;
+  height: 245px;
+}
+
+footer .social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+footer .separador {
+  width: 1px;
+  height: 85px;
+  background-color: #4D4D4D;
+  margin-bottom: -80px;
+}
+
+footer .final .icone{margin-top: 85px;}
+
+footer .final .icone .ralc{
+  margin-left: 36px;
+  margin-right: 60px;
+}
+
+footer .final .copy{
+  margin-top: 30px;
+  font-family: "Roboto Condensed";
+  font-size: 15px;
+  color: white;
+}
+
+footer .final .face .img-vermelho, .insta .img-vermelho, .link .img-vermelho {display: none;}
+
+footer .final .face:hover .img-cinza, .insta:hover .img-cinza, .link:hover .img-cinza {display: none;}
+
+footer .final .face:hover .img-vermelho, .insta:hover .img-vermelho, .link:hover .img-vermelho {
+  display: inline-block;
+  cursor: pointer;
+}
+
+footer .final .face, .insta, .link{margin-right: 30px;}
