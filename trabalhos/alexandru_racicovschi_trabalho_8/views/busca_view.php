@@ -26,11 +26,13 @@ if($form){
             <?php $v = $r["viagem"] ?>
         
             <div class="card" style="width: 18rem;">
-              <img src="<?= $v->imagem ?>" class="card-img-top" alt="<?= $v->titulo ?>">
-              <div class="card-body">
-                <h5 class="card-title"><?= $v->titulo ?></h5>
-                <p class="card-text"><?= substr(strip_tags($v->texto), 0, 100) ?>...</p>
-              </div>
+              <a href="viagem.php?posicao=<?= $r["posicao_original"] ?>">
+                <img src="<?= $v->imagem ?>" class="card-img-top" alt="<?= $v->titulo ?>">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $v->titulo ?></h5>
+                  <p class="card-text"><?= substr(strip_tags($v->texto), 0, 100) ?>...</p>
+                </div>
+              </a>
             </div>
 
           <?php endforeach ?>

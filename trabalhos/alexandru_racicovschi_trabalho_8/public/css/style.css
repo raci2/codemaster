@@ -7,3 +7,16 @@ body{
   max-height: 750px;
   object-fit: cover;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.card img{
+  height: 190px;
+}
+
+.viagem-img img{
+  height: 372px;
+}

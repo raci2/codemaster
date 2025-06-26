@@ -19,7 +19,7 @@ if($form){
       </div>
 
       <div class="row mt-5">
-        <div class="col-12">
+        <div class="col-12 viagem-img">
           <img src="<?= $viagem->imagem ?>" alt="<?= $viagem->titulo ?>" class="w-50 float-start me-3 mb-2">
           <?= $viagem->texto ?>
         </div>
