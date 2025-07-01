@@ -2,15 +2,20 @@
 
 require_once "helpers/base_dados_helper.php";
 
-$form = !empty($_GET["Coluna"]) && !empty($_GET["Ordenacao"]);
+$form = !empty($_GET["Coluna"]) && !empty($_GET["Ordenacao"]) && isset($_GET["min"]) && isset($_GET["max"]);
+
+$min = "";
+$max = "";
 $coluna = "";
 $ordenacao = "";
 
 if($form){
   $coluna = $_GET["Coluna"];
   $ordenacao = $_GET["Ordenacao"];
+  $min = floatval($_GET["min"]);
+  $max = floatval($_GET["max"]);
   $ordenacao = ($ordenacao == "crescente") ? "ASC" : "DESC";
-  $produtos = select_sql("SELECT * FROM produtos ORDER BY $coluna $ordenacao");
+  $produtos = select_sql("SELECT * FROM produtos WHERE preco BETWEEN $min AND $max ORDER BY $coluna $ordenacao ");
 }else{
   $produtos = select_sql("SELECT * FROM produtos");
 }
@@ -23,16 +28,19 @@ if($form){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício 127.2</title>
+  <title>Exercício 128.1</title>
   <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
   
-<h1>SELECT + ORDER BY</h1>
+<h1>SELECT + WHERE + BETWEEN + ORDER BY</h1>
 
 <form action="" class="caixa">
   <h3>Formulário</h3>
   <br>
+  <input type="number" name="min" step="0.01" value="<?=$min?>" required placeholder="min">
+  <input type="number" name="max" step="0.01" value="<?=$max?>" required placeholder="max">
+  <br><br>
   <label for="coluna">Coluna:</label>
   <select name="Coluna" id="coluna">
     <option value="id" <?= ($coluna == 'id') ? 'selected' : '' ?>>ID</option>
@@ -56,7 +64,13 @@ if($form){
 </form>
 
 <div class="caixa">
-  <h3>Todos os Produtos</h3>
+   <?php
+    if($form){
+      echo "<h3>Produtos entre ($min €) e ($max €)</h3>";
+    }else{
+      echo "<h3>Meus produtos</h3>";
+    }
+  ?>
   <br>
   <div class="tabela">
     <table>
