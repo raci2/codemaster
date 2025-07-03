@@ -1,0 +1,70 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+li{text-align: left;}
+.caixa{
+  background-color: rgba(255, 255, 255, 20%);
+  border: 2px solid white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  width: 80%;
+  min-width: 400px;
+  max-width: 800px;
+}
+.caixa *{margin: 0px;}
+.caixa input, button, select{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 20%);
+  border: none;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.caixa input[type="submit"], button{
+  border: 2px solid white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: transparent;
+  color: white;
+}
+.caixa input[type="submit"]:hover, button:hover{
+  background-color: rgba(255, 255, 255, 80%);
+  color: rgb(60, 60, 60);
+}
+
+::placeholder{color: rgb(175, 175, 175);}
+
+table{
+  border-collapse: collapse;
+  width: 90%;
+
+}
+td, th{
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+#especial{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabela{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+tr:nth-of-type(even){background-color: gray;}
+
+.coluna{color: red;}

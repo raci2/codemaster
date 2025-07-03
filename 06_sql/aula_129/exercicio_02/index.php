@@ -64,7 +64,7 @@ if($form){
         <th>NOME</th>
         <th>PREÇO</th>
         <th>STOCK</th>
-        <th>FORNECEDOR</th>
+        <th>FORNECEDOR</th> 
       </tr>
 
       <?php foreach($produtos as $p): ?>
