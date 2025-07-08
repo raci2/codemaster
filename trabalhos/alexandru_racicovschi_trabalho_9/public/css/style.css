@@ -2,13 +2,14 @@ body{
   max-width: 1280px;
   margin: auto;
 }
-.logo{margin-top: 35px;}
-.logo img{
+header .logo{margin-top: 35px;}
+header .logo img{
   width: 317px;
   height: 44px;
 }
+a{text-decoration: none;}
 
-.navbar{
+header .navbar{
   margin-top: 10px;
   background-color: #333333 !important;
   width: 795px;
@@ -17,11 +18,11 @@ body{
   z-index: 1;
 }
 
-.navbar-nav{
+header .navbar-nav{
   display: flex;
   align-items: center !important;
 }
-.navbar a{
+header .navbar a, footer .menu a{
   font-family: 'DIN Pro Cond Medium';
   font-size: 18px;
   text-transform: uppercase;
@@ -30,39 +31,39 @@ body{
 
 }
 
-.nav a:hover{
+header .nav a:hover{
   /* font-family: 'DIN Pro Cond Black'; */
   border-top: 4px solid #c6021a;
   color: white;
 }
 
-.nav:has(a:hover) .active {
+header .nav:has(a:hover) .active {
   border-top-color: transparent;
 }
 
-.nav-item .active{
+header .nav-item .active{
   color: white !important;
   border-top: 4px solid #c6021a;
 }
 
-.dropdown-menu{
+header .dropdown-menu{
   background-color: #4d4d4d;
   padding: 8px 15px;
   
 }
 
-.dropdown-item:hover{
+header .dropdown-item:hover{
   background-color: #4d4d4d;
   border-top: none !important;
 }
 
-.dropdown-divider{
+header .dropdown-divider{
   border-color: white;
 }
 
-.nav-link.show{color: white !important;}
+header .nav-link.show{color: white !important;}
 
-span{border-bottom: 3px solid #c6021a;}
+main span{border-bottom: 3px solid #c6021a;}
 
 .t1{
   font-family: 'DIN Pro Cond Medium';
@@ -71,7 +72,7 @@ span{border-bottom: 3px solid #c6021a;}
   margin-top: 90px;
 }
 
-.almada{
+main .almada{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -82,12 +83,12 @@ span{border-bottom: 3px solid #c6021a;}
   /* height: 930px; */
 }
 
-.almada img{
+main .almada img{
   width: 460px !important;
   height: 420px;
 }
 
-.almada-texto{
+main .almada-texto{
   width: 420px;
   min-height: 205px;
   background-color: rgba(0, 0, 0, 0.80);
@@ -97,23 +98,23 @@ span{border-bottom: 3px solid #c6021a;}
   color: white;
 }
 
-.almada-texto h5, .almada-texto p{
+main .almada-texto h5, .almada-texto p{
   padding-left: 65px;
   font-family: 'DIN Pro Cond Medium' !important;
   font-size: 30px;
 }
 
-.almada-texto h5{padding-top: 35px;}
-.almada-texto p{text-transform: uppercase;}
+main .almada-texto h5{padding-top: 35px;}
+main .almada-texto p{text-transform: uppercase;}
 
-.setas{
+main .setas{
   display: flex;
   justify-content: space-around;
 }
 
 
 
-.carousel-control-prev, .carousel-control-next{
+main .carousel-control-prev, .carousel-control-next{
   position: relative;
   /* width: 20px;
   height: 32px; */
@@ -121,13 +122,13 @@ span{border-bottom: 3px solid #c6021a;}
   z-index: 2;
 }
 
-.carousel-indicators{
+main .carousel-indicators{
   position: relative;
   margin: 0px;
   bottom: 380px;
 }
 
-.carousel-indicators [data-bs-target]{
+main .carousel-indicators [data-bs-target]{
   width: 19px;
   height: 19px;
   background-color: transparent;
@@ -136,309 +137,83 @@ span{border-bottom: 3px solid #c6021a;}
   background-repeat: no-repeat;
   opacity: 1;
 }
-.carousel-indicators .active{
+main .carousel-indicators .active{
   background-image: url("../imagens/bola-tipo-de-fogo-seleccionada.svg");
 }
 
-hr{
+main hr{
   border: none;
   height: 10px;
   background: linear-gradient(to bottom,black, transparent);
 }
-/* .carousel-control-prev{left: 50px;}
-.carousel-control-next{left: 250px;} */
-/* 
-header .carousel-indicators {
-  display: flex;          
-  align-items: center;    
-  justify-content: center;
-  margin-bottom: 45px;
-  margin-right: 95px;
-}
 
-header .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  background-image: url("imagens/SVG/banner-por-selecionar.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  background-color: transparent;
-  opacity: 1;
-  margin: 0px 25px;
-}
-
-header .carousel-indicators .active {
-  width: 24px;
-  height: 24px;
-  background-image: url('imagens/SVG/banner-selecionado.svg');
-  background-color: transparent;
-}
-
-header .carousel-caption{
-  margin-bottom: 160px;
-  margin-left: 100px;
-}
-
-header .carousel-caption h5{
-  font-size: 55px;
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  text-align: left;
-}
-
-header .carousel-caption p{
-  font-size: 35px;
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  text-align: left;
-}
-
-main .caixa{
-  margin-top: 140px;
-  width: 617px;
-  height: 473px;
-  padding: 0px 120px 0px 50px;
-}
-
-main .caixa h1{
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  font-size: 42px;
-  color: #4D4D4D;
-  text-transform: uppercase;
-  margin-top: 15px;
-  padding-right: 100px;
-}
-
-main .caixa h1 span{color:  #CE000F;}
-
-main .caixa p{
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 18px;
-  color: #333333;
-}
-
-main .ver_mais .ver-mais-img{
-  width: 112px;
-  height: 38px;
-  margin: auto;
-  background-image: url("imagens/SVG/botao-vermais-cinza.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main .ver_mais .ver-mais-img:hover{
-  background-image: url("imagens/SVG/botao-vermais-vermelho.svg");
-  cursor: pointer;
-}
-
-main .galeria {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main .galeria-1, main .galeria-2, main .galeria-3, main .galeria-4 {
-  position: relative;
-  width: 50%;
-  height: 460px;
-}
-
-main .galeria-1 {background-image: url("imagens/JPG/banner-energia-solar.jpg");}
-main .galeria-2 {background-image: url("imagens/JPG/banner-eletricidade-gas.jpg");}
-main .galeria-3 {background-image: url("imagens/JPG/banner-assistencia-tecnica.jpg");}
-main .galeria-4 {background-image: url("imagens/JPG/banner-plano-edp.jpg");}
-
-main .galeria-1::before, main .galeria-2::before, main .galeria-3::before, main .galeria-4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+footer{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 1;
+  background-color: #333333;
 }
-
-main .galeria-1 > h1, main .galeria-2 > h1, main .galeria-3 > h1, main .galeria-4 > h1 {
-  position: relative;
-  z-index: 2;
-  margin-top: 150px;
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  font-size: 42px;
-}
-
-main .galeria img {
-  position: relative;
-  z-index: 2;
-  margin-top: 20px;
-}
-
-main .ajuda h1{
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  font-size: 42px;
-  color: #4D4D4D;
-  margin-top: 142px;
-  margin-bottom: 0px;
-}
-
-main .ajuda h1 span{color:  #CE000F;}
-
-main .ajuda p{
-  font-family: "Roboto Condensed";
-  font-size: 24px;
-  color: #4D4D4D;
-  font-weight: 300;
-  margin-top: 23px;
-  margin-bottom: 0px;
-}
-
-main .ajuda .offset-3{
-  font-family: "Roboto Condensed";
-  color: #333333;
-  font-size: 30px;
-  margin-top: 20px;
-}
-
-main .ajuda .offset-3 span{
-  font-weight: bold;
-  margin-left: 20px;
-  margin-right: 17px;
-}
-
-main .ajuda .fale .fale-img{
-  width: 200px;
-  height: 40px;
-  background-image: url("imagens/SVG/fale-connosco-cinza.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main .ajuda .fale .fale-img:hover{
-  background-image: url("imagens/SVG/fale-connosco-vermelho.svg");
-  cursor: pointer;
-}
-
-main .fale{margin-bottom: 165px;}
-
-main .agente {
-  position: relative;
-  background-image: url("imagens/JPG/banner-torne-se-um-agente.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main .agente::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
-  z-index: 1;
-}
-
-main .agente > div {
-  position: relative;
-  z-index: 2;
-}
-
-main .agente h1{
-  margin-top: 60px; 
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  font-size: 50px;
-}
-
-main .agente h1 span{color: #CE000F;}
-
-main .agente p{
-  font-family: "Roboto Condensed";
-  font-weight: 300;
-  font-size: 25px;
-}
-
-main .agente .agente-img{
-  width: 154px; 
-  height: 48px;
-  margin: 55px auto;
-  background-image: url("imagens/SVG/botao-saber- mais-vermelho.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main .agente .agente-img:hover{
-  background-image: url("imagens/SVG/saber-mais-cinza.svg");
-  cursor: pointer;
-} */
 
 footer .menu {
-  height: 135px;
-  background-color: #232323;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 55px;
 }
 
-footer .menu a, footer .final p.m-0{
-  margin: 0px 25px;
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  font-size: 18px;
+footer .menu a{padding: 0px 22.5px;}
+
+footer .menu a.active{color: white;}
+
+footer .t1{
+  margin-top: 30px;
   color: white;
-  text-decoration: none;
 }
 
-footer .menu a.active,footer .menu a:hover {color: #CE000F;}
-
-footer .final {
-  background-color: #1A1A1A;
-  height: 245px;
+footer .campos{
+  margin-top: 30px;
+  font-family: "DIN Pro Cond Medium";
+  font-size: 30px;
 }
 
-footer .social-icon {
-  width: 50px;
-  height: 50px;
+footer .campos-c{
+  font-family: "DIN Pro Regular";
+  font-size: 15px;
+  margin-top: 20px;
 }
+
+footer .campos.text-end{padding-right: 40px;}
+
+footer .padding{padding: 0px 20px;}
 
 footer .separador {
-  width: 1px;
-  height: 85px;
-  background-color: #4D4D4D;
-  margin-bottom: -80px;
+  margin-top: 45px;
+  border-top: 2px solid #c6021a;
+  width: 810px;
 }
 
-footer .final .icone{margin-top: 85px;}
-
-footer .final .icone .ralc{
-  margin-left: 36px;
-  margin-right: 60px;
+footer .facebook, footer .ralc{
+  width: 130px;
+  height: 50px;
+  background-image: url("../imagens/icones/facebook-branco.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-footer .final .copy{
-  margin-top: 30px;
-  font-family: "Roboto Condensed";
-  font-size: 15px;
-  color: white;
-}
-
-footer .final .face .img-vermelho, .insta .img-vermelho, .link .img-vermelho {display: none;}
-
-footer .final .face:hover .img-cinza, .insta:hover .img-cinza, .link:hover .img-cinza {display: none;}
-
-footer .final .face:hover .img-vermelho, .insta:hover .img-vermelho, .link:hover .img-vermelho {
-  display: inline-block;
+footer .facebook:hover{
+  background-image: url("../imagens/icones/facebook-vermelho.svg");
   cursor: pointer;
 }
 
-footer .final .face, .insta, .link{margin-right: 30px;}
+footer .ralc{
+  width: 200px;
+  height: 46px;
+  background-image: url("../imagens/icones/ralc.svg");
+  margin-left: 140px;
+}
+
+
+footer .icones{margin-top: 45px;}
+
+footer .copy{
+  font-family: "DIN Pro Regular";
+  font-size: 15px;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
