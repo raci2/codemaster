@@ -63,13 +63,42 @@ header .dropdown-divider{
 
 header .nav-link.show{color: white !important;}
 
-main span{border-bottom: 3px solid #c6021a;}
+.linha{
+  border-top: 3px solid #c6021a;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  opacity: 1;
+  width: 90px;
+}
+
+.col-12 .linha{width: 50px;}
+
+.almada-texto .linha{
+  width: 33px;
+  margin-left: 66px;
+}
 
 .t1{
   font-family: 'DIN Pro Cond Medium';
   font-size: 46px;
   color: #4d4d4d;
   margin-top: 90px;
+}
+
+.titulo{
+  font-family: "DIN Pro Cond Medium";
+  font-size: 38px;
+}
+
+.subtitulo-2{
+  font-family: "Montserrat";
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+header .carousel-caption{
+  left: 57.5%;
+  right: auto;
 }
 
 main .almada{
@@ -90,7 +119,7 @@ main .almada img{
 
 main .almada-texto{
   width: 420px;
-  min-height: 205px;
+  min-height: 250px;
   background-color: rgba(0, 0, 0, 0.80);
   margin: auto;
   position: relative;
@@ -125,7 +154,7 @@ main .carousel-control-prev, .carousel-control-next{
 main .carousel-indicators{
   position: relative;
   margin: 0px;
-  bottom: 380px;
+  bottom: 360px;
 }
 
 main .carousel-indicators [data-bs-target]{
@@ -141,10 +170,27 @@ main .carousel-indicators .active{
   background-image: url("../imagens/bola-tipo-de-fogo-seleccionada.svg");
 }
 
-main hr{
+/* main hr{
   border: none;
   height: 10px;
   background: linear-gradient(to bottom,black, transparent);
+} */
+
+main .ver-mais{
+  width: 90px;
+  height: 35px;
+  background-color: #c6021a;
+  font-family: "DIN Pro Bold";
+  font-size: 10px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+main .ver-mais:hover{
+  background-color: white;
+  border: 2px solid #c6021a;
+  color: #c6021a;
+  cursor: pointer;
 }
 
 footer{
