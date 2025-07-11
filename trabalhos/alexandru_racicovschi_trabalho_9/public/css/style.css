@@ -28,11 +28,12 @@ header .navbar a, footer .menu a{
   text-transform: uppercase;
   color: rgba(211, 211, 211, 0.80);
   padding: 25px 0px;
+  border-top: 4px solid transparent;
 
 }
 
 header .nav a:hover{
-  /* font-family: 'DIN Pro Cond Black'; */
+  font-family: 'DIN Pro Cond Black';
   border-top: 4px solid #c6021a;
   color: white;
 }
@@ -40,6 +41,8 @@ header .nav a:hover{
 header .nav:has(a:hover) .active {
   border-top-color: transparent;
 }
+
+header .nav-link:focus{color: rgba(211, 211, 211, 0.80);}
 
 header .nav-item .active{
   color: white !important;
@@ -49,12 +52,14 @@ header .nav-item .active{
 header .dropdown-menu{
   background-color: #4d4d4d;
   padding: 8px 15px;
+  font-family: 'DIN Pro Cond Light';
   
 }
 
 header .dropdown-item:hover{
   background-color: #4d4d4d;
   border-top: none !important;
+  font-family: 'DIN Pro Cond Bold';
 }
 
 header .dropdown-divider{
@@ -68,9 +73,9 @@ header .nav-link.show{color: white !important;}
   margin-top: 4px;
   margin-bottom: 12px;
   opacity: 1;
-  width: 90px;
 }
 
+header .linha{width: 90px !important;}
 .col-12 .linha{width: 50px;}
 
 .almada-texto .linha{
@@ -115,6 +120,7 @@ main .almada{
 main .almada img{
   width: 460px !important;
   height: 420px;
+  object-fit: cover;
 }
 
 main .almada-texto{
@@ -158,8 +164,8 @@ main .carousel-indicators{
 }
 
 main .carousel-indicators [data-bs-target]{
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   background-image: url("../imagens/bola-tipo-de-fogo-por-seleccionar.svg");
   background-position: center;
@@ -170,11 +176,13 @@ main .carousel-indicators .active{
   background-image: url("../imagens/bola-tipo-de-fogo-seleccionada.svg");
 }
 
-/* main hr{
-  border: none;
+main .sombra{
+  border-color: white;
   height: 10px;
-  background: linear-gradient(to bottom,black, transparent);
-} */
+  box-shadow: 0px 8px 6px black;
+  width: 1280px !important;
+  margin: auto;
+}
 
 main .ver-mais{
   width: 90px;
