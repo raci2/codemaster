@@ -14,7 +14,7 @@ body{
   margin: 20px auto;
   /* min-width: 500px; */
   min-width: 400px;
-  max-width: 800px;
+  max-width: fit-content;
 }
 .caixa *{margin: 0px;}
 .caixa input, button, select{
@@ -92,4 +92,9 @@ pre{text-align: left;}
 .seditarim:hover{
   background-color: rgb(255, 255, 0);
   font-weight: bold;
+}
+
+.tres-pontos{
+  font-size: 25px;
+  padding: 0px 10px;
 }

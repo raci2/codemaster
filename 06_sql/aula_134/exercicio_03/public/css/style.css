@@ -93,3 +93,8 @@ pre{text-align: left;}
   background-color: rgb(255, 255, 0);
   font-weight: bold;
 }
+
+.tres-pontos{
+  font-size: 25px;
+  padding: 0px 10px;
+}

@@ -2,7 +2,7 @@
 
 $base_dados = [
   "host" => "localhost",
-  "dbname" => "codemaster_12_bd",
+  "dbname" => "codemaster_bd",
   "user" => "root",
   "pass" => "",
 ];
