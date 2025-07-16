@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 140.1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="funcoes.js" defer></script>
+  <script src="main.js" defer></script>
+
+</head>
+<body>
+
+  <h1>Javascript</h1>
+  <br>
+
+  <div class="caixa">
+    <h2>Conversor Monetário</h2>
+    <br>
+    <input oninput="calcular()" type="number" min="0.01" id="input_euro" placeholder="Euro" autofocus>
+    <br><br>
+    <label for="moeda">Moeda:</label>
+    <select name="moeda" id="moeda" oninput="calcular()">
+      <option value="dolar">Dólar</option>
+      <option value="libra">Libra</option>
+      <option value="yen">Yen</option>
+      <option value="real">Real</option>
+    </select>
+  </div>
+  <div class="caixa d-none" id="saida"></div>
+</body>
+</html>

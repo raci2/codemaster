@@ -30,7 +30,7 @@ body{
 }
 
 
-#caixa{display: none;}
+.d-none{display: none;}
 
 button{
   background-color: transparent;
@@ -52,7 +52,7 @@ button:hover{
   background-color: rgba(255, 255, 255, 20%);
   border: none;
   padding: 5px 10px;
-  color: yellow;
+  color: black;
   border-radius: 10px;
   font-size: 16px;
 }

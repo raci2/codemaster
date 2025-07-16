@@ -14,5 +14,7 @@ function enviar(event){
   let nome = input.value;
   let cor = color.value;
   body.style.backgroundColor = cor;
+
+  caixa.style.display = "block";
   saida.innerHTML = `Olá ( ${nome} ), vejo que escolheste a cor ( ${cor} ).`;
 }
