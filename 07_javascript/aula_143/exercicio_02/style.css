@@ -1,0 +1,163 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.calculadora{
+  border: 1px solid white;
+  width: fit-content;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+.ecra{
+  background-color: black;
+  /* padding: 10px; */
+  color: red;
+  font-size: 32px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.teclas button{
+  font-size: 32px;
+  min-width: 60px;
+  height: 60px;
+  margin: 18px;
+}
+
+.especial{
+  border-radius: 10px;
+  background-color: #AB3A35;
+}
+
+.caixa{
+  background-color: rgba(255, 255, 255, 20%);
+  border-radius: 30px;
+  border: 1px solid white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  /* min-width: 500px; */
+  min-width: 400px;
+  max-width: 75%;
+}
+
+.active{
+  background-color: blue;
+  border: 8px double palevioletred;
+  text-decoration: overline underline;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  color: #DEDE2D;
+  font-size: 20px;
+}
+
+
+.d-none{display: none;}
+
+button{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 20px;
+  color: white;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: grey;
+}
+
+.for{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .caixa *{margin: 0px;} */
+.caixa input, select{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 20%);
+  border: none;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.caixa input[type="submit"], .caixa input[type="reset"] {
+  border: 2px solid white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: transparent;
+  color: white;
+}
+.caixa input[type="submit"]:hover, .caixa input[type="reset"]:hover{
+  background-color: rgba(255, 255, 255, 80%);
+  color: rgb(60, 60, 60);
+}
+
+::placeholder{color: rgb(175, 175, 175);}
+
+table{
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto !important;
+}
+td, th{
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#especial{
+  display: flex;
+  justify-content: space-between;
+}
+
+tr:nth-of-type(odd){background-color: gray;}
+
+pre{text-align: left;}
+
+.asc, .desc{color: red;}
+.asc::after{content: "↑";}
+.desc::after{content: "↓";}
+
+.apagar{
+  background-color: rgba(255, 0, 0, 0.389);
+  font-size: 18px;
+}
+.apagar:hover{
+  background-color: red;
+  font-weight: bold;
+}
+
+.sim{
+  background-color: rgba(0, 255, 0, 0.389);
+  font-size: 18px;
+}
+.sim:hover{
+  background-color: rgb(0, 255, 0);
+  font-weight: bold;
+}
+
+.editar{
+  background-color: rgba(255, 255, 0, 0.389);
+  font-size: 18px;
+}
+.seditarim:hover{
+  background-color: rgb(255, 255, 0);
+  font-weight: bold;
+}
+
+.tres-pontos{
+  font-size: 25px;
+  padding: 0px 10px;
+}
