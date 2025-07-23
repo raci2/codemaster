@@ -127,6 +127,11 @@ main .almada{
   margin-top: 85px;
 }
 
+main .almada-mobile{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
 main .almada img{
   width: 460px !important;
   height: 420px;
@@ -141,6 +146,12 @@ main .almada-texto{
   position: relative;
   bottom: 550px;
   color: white;
+}
+
+main .almada-texto-mobile{
+  width: 100%;
+  background-color: #333333;
+  bottom: 40px;
 }
 
 main .almada-texto h5, .almada-texto p{
@@ -176,6 +187,8 @@ main .carousel-indicators{
   bottom: 360px;
 }
 
+main .carousel-indicators-mobile{top: 150px;}
+
 main .carousel-indicators [data-bs-target]{
   width: 20px;
   height: 20px;
@@ -193,8 +206,7 @@ main .sombra{
   border-color: white;
   height: 10px;
   box-shadow: 0px 8px 6px black;
-  width: 99.2vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
 }
 
 main .ver-mais{
@@ -312,18 +324,8 @@ footer .copy{
     top: 110px;
   }
 
-  .esconder{
-    display: none !important;
-  }
 
-  main .almada{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
 
-  main .almada-texto{
-    width: auto;
-  }
 }
 
 @media (max-width: 576px){
