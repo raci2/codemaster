@@ -34,6 +34,8 @@ header .navbar-toggler img{
   width: 100%;
   height: 100%;
 }
+
+
 header .navbar a, footer .menu a{
   font-family: 'DIN Pro Cond Medium';
   font-size: 18px;
@@ -127,11 +129,6 @@ main .almada{
   margin-top: 85px;
 }
 
-main .almada-mobile{
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
 main .almada img{
   width: 460px !important;
   height: 420px;
@@ -148,11 +145,6 @@ main .almada-texto{
   color: white;
 }
 
-main .almada-texto-mobile{
-  width: 100%;
-  background-color: #333333;
-  bottom: 40px;
-}
 
 main .almada-texto h5, .almada-texto p{
   padding-left: 65px;
@@ -225,6 +217,10 @@ main .ver-mais:hover{
   color: #c6021a;
   cursor: pointer;
 }
+
+/* .altura{
+  height: 150px;
+} */
 
 footer{
   height: 100%;
@@ -301,16 +297,34 @@ footer .copy{
   margin-bottom: 40px;
 }
 
+/* Mobile */
+
+#nav-mobile:has(.show), #nav-mobile:has(.collapsing){
+  width: 92vw;
+  flex-direction: column;
+}
+
+main .almada-texto-mobile{
+  width: 100%;
+  background-color: #333333;
+  bottom: 40px;
+}
+
+main .almada-mobile{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
 
 @media (max-width: 768px){
   header .logo img{
     width: 240px;
     height: 36px;
   }
-  header .navbar{
+  /* header .navbar{
     top: -60px;
     left: 180px;
-  }
+  } */
 
   .titulo{
     font-size: 27px;
@@ -322,6 +336,11 @@ footer .copy{
 
   header .carousel-caption{
     top: 110px;
+  }
+
+
+  main .ver-mais{
+    font-size: 13px;
   }
 
 
@@ -360,6 +379,16 @@ footer .copy{
   header .carousel-caption{
     top: 40px;
     left: 8%;
+  }
+
+  footer .facebook{
+    width: 100px;
+    height: 40px;
+  }
+
+  footer .ralc{
+    width: 140px;
+    height: 40px;
   }
 
 }

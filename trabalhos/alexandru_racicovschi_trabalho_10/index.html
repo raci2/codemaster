@@ -27,7 +27,8 @@
       <div class="col-12 text-center logo"><img src="public/imagens/logo.png" alt="logotipo"></div>
     
       <div class="col-12 nav justify-content-center">
-        <nav class="navbar navbar-expand-md bg-body-tertiary ">
+        <!-- Desktop -->
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <img src="public/imagens/icones/abrir-menu.svg" alt="">
@@ -81,6 +82,63 @@
             </div>
           </div>
         </nav>
+
+        <!-- Mobile -->
+        <!-- <nav class="navbar navbar-expand-md bg-body-tertiary d-block d-md-none" id="nav-mobile">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="public/imagens/icones/abrir-menu.svg" alt="">
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EMPRESA
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item p-0" href="#">HISTORIAL</a></li>
+                    <li><hr class="dropdown-divider m-1"></li>
+                    <li><a class="dropdown-item p-0" href="#">FILOSOFIA E VALORES</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PROJECTOS EM COMERCIALIZAÇÃO
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item p-0" href="#">TERRAÇOS - ALMADA</a></li>
+                    <li><hr class="dropdown-divider m-1"></li>
+                    <li><a class="dropdown-item p-0" href="#">JARDIM - BRAGA</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PORTFÓLIO
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item p-0" href="#">VARANDAS LOREM - ALMADA</a></li>
+                    <li><hr class="dropdown-divider m-1"></li>
+                    <li><a class="dropdown-item p-0" href="#">VILA IPSUM - SESSIMBRA</a></li>
+                    <li><hr class="dropdown-divider m-1"></li>
+                    <li><a class="dropdown-item p-0" href="#">CAMPO DOLOR - BRAGA</a></li>
+                    <li><hr class="dropdown-divider m-1"></li>
+                    <li><a class="dropdown-item p-0" href="#">ESTRADA SIT - LISBOA</a></li>
+                    <li><hr class="dropdown-divider m-1"></li>
+                    <li><a class="dropdown-item p-0" href="#">RUA AMET - PORTO</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTOS</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+
       </div>
 
       <div class="col-12 p-0">
@@ -171,13 +229,13 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="almada almada-mobile">
-                <img src="public/imagens/almada/01.jpg" class="d-block w-100" alt="...">
+                <img src="public/imagens/almada/01.jpg" class="d-block w-75" alt="...">
               </div>
               
             </div>
             <div class="carousel-item">
               <div class="almada almada-mobile">
-                <img src="public/imagens/almada/05.jpg" class="d-block w-100" alt="...">
+                <img src="public/imagens/almada/05.jpg" class="d-block w-75" alt="...">
               </div>
             </div>
           </div>
@@ -331,16 +389,16 @@
         </div>
 
         <!-- Mobile -->
-        <div class="almada-texto almada-texto-mobile text-start d-md-none d-block">
+        <div class="almada-texto almada-texto-mobile text-start d-md-none d-block mb-5">
           <h5>Jardim - Braga</h5>
           <hr class="linha">
           <p>T0</p>
           <div class="setas">
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
               <img src="public/imagens/seta-esquerda-branca.svg" alt="">
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
               <img src="public/imagens/seta-direita-branca.svg" alt="">
               <span class="visually-hidden">Next</span>
             </button>
@@ -356,7 +414,7 @@
 
   <footer class="container-fluid">
     <div class="row">
-      <div class="col-12 menu text-center">
+      <div class="col-12 menu text-center d-none d-md-block">
         <div>
           <a href="#" class="active">HOME</a>
           <a href="#">EMPRESA</a>
@@ -370,7 +428,8 @@
     <div class="row">
       <div class="col-12">
         <div class="container-fluid">
-          <div class="row text-white">
+          <!-- Desktop -->
+          <div class="row text-white d-none d-md-flex">
             <div class="col-10 offset-2 text-start t1">Contactos</div>
             <div class="col-3 offset-2 campos">Morada</div>
             <div class="col-2 text-center campos">Telefone</div>
@@ -379,12 +438,26 @@
             <div class="col-2 text-end campos-c padding ">(+351) 300 555 666</div>
             <div class="col-3 text-end campos-c px-2">geral@casasepropriedades.pt</div>
           </div>
+          <!-- Mobile -->
+          <div class="row text-white text-center d-block d-md-none">
+            <div class="col-12 t1">Contactos</div>
+            <div class="col-12 campos">Morada</div>
+            <div class="col-12 campos-c mt-2">Rua Lorem Ipsum, nº 123, 1DTO, Almada, Portugal</div>
+            <div class="col-12 campos">Telefone</div>
+            <div class="col-12 campos-c mt-2">(+351) 300 555 666</div>
+            <div class="col-12 campos">E-mail</div>
+            <div class="col-12 campos-c mt-2">geral@casasepropriedades.pt</div>
+          </div>
           <div class="row">
             <div class="col-8 offset-2 separador mx-auto"></div>
           </div>
-          <div class="row icones">
+          <div class="row icones d-none d-md-flex">
             <div class="col-1 offset-4 facebook"></div>
             <div class="col-1 ralc"></div>
+          </div>
+           <div class="row icones d-md-none d-flex justify-content-center">
+            <div class="col-1 facebook  me-4"></div>
+            <div class="col-1 ralc ms-5"></div>
           </div>
             
   
